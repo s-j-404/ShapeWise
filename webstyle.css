@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+Header Style
+header {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 30px;
+  background-color: #f4f4f4;
+}
+
+.shape-img {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+/* Product Section */
+.product-section {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.product-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Product Cards Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(186, 44, 44, 0.1);
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  background-color: #f3d1dc;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 500px;
+}
+
+.product-card h3 {
+  margin: 15px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Add to Cart Button */
+.product-card button {
+  padding: 10px 20px;
+  background-color: #0D9276;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding-bottom: 10px;
+
+}
+
+.product-card button:hover {
+  background-color: #db2058;
+}
+
+/* Footer */
+footer {
+  background-color: #0D9276;
+  color: #f5efef;
+  text-align: center;
+  
+  padding: 15px;
+  margin-top: 40px;
+  
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 1000px;
+    height: 1000px;
+  }
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center everything horizontally */
+  background-color: #0D9276;
+  padding: 50px;
+  color: white;
+  gap: 15px; /* Adds spacing between logo and text */
+}
+
+
+.header .logo {
+   width: 200px;      
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; 
+  position: absolute;
+  left: 10px;
+}
+
+.header h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+p{
+  font-size: x-large;
+  color: #943a79;
+  font-weight: bold;
+}

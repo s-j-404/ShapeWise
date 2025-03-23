@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body Shape Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="assets/logo.png" alt="Website Logo" class="logo">
+    <h1>Know your Shape</h1>
+  </div>
+
+  <div class="container">
+    <div class="left-panel">
+      <h2>Body Shape Calculator</h2>
+      <input type="number" id="bust" placeholder="Enter Bust (in inches)">
+      <input type="number" id="waist" placeholder="Enter Waist (in inches)">
+      <input type="number" id="hips" placeholder="Enter Hips (in inches)">
+      <input type="number" id="height" placeholder="Enter Height (in cm)">
+      <button onclick="calculateBodyShape()">Calculate</button>
+      <div id="result"></div>
+    </div>
+
+    <div class="right-panel">
+      <div id="shape-section" style="display: none;">
+        <p>Your Body Shape is: <span id="bodyShape" class="shape-name"></span></p>
+        <p id="sizeSuggestion" class="size-suggestion"></p>  <!-- Size suggestion appears here -->
+        <img id="shapeImage" src="" alt="Body Shape Image">
+        <button id="recommendBtn" onclick="getRecommendations()">Get Recommendations</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
